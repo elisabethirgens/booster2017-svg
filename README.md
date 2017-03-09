@@ -6,13 +6,13 @@ Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand code
 
 If your happy place is usually filled with code — and drawing sounds scary — this workshop is especially for you.
 
-![Scribbled line with a ghost.](scary.svg)
+![Scribbled line with a ghost.][scary.svg]
 
 ## Exercises
 
 “But I can’t draw,” you say…? Sure you can! Because basic shapes and simple lines will do just fine. There is so much we can make without any classic drawing skills, and this is what we want to show you.
 
-![Colourful circles.](https://raw.githubusercontent.com/bring/booster2017-svg/master/circles.svg)
+![Colourful circles.][circles.svg]
 
 ## Useful links
 
@@ -25,4 +25,4 @@ If your happy place is usually filled with code — and drawing sounds scary —
 * [A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/) by Amelia Bellamy-Royds.
 * [SVG element reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Element) on MDN.
 
-![Browser with dummy design.](browser.svg)
+![Browser with dummy design.][browser.svg]
