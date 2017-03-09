@@ -12,7 +12,7 @@ If your happy place is usually filled with code — and drawing sounds scary —
 
 “But I can’t draw,” you say…? Sure you can! Because basic shapes and simple lines will do just fine. There is so much we can make without any classic drawing skills, and this is what we want to show you.
 
-![Colourful circles.](circles.svg)
+![Colourful circles.](https://raw.githubusercontent.com/bring/booster2017-svg/master/circles.svg)
 
 ## Useful links
 
