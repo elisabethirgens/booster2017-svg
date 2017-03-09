@@ -18,7 +18,7 @@ If your happy place is usually filled with code — and drawing sounds scary —
 
 * [Pocket Guide to Writing SVG](http://svgpocketguide.com/book/) by Joni Trythall.
 * [Intro to using SVG](https://css-tricks.com/using-svg/) by Chris Coyier.
-* [Tools to Visualize and Edit SVG Paths](https://css-tricks.com/tools-visualize-edit-svg-paths-kinda/)
+* [Tools to Visualize and Edit SVG Paths](https://css-tricks.com/tools-visualize-edit-svg-paths-kinda/) by Chris Coyier.
 * [SVG Optimizer](https://github.com/svg/svgo) is a Nodejs-based tool for optimizing SVG vector graphics files.
 * [SVGOMG](https://jakearchibald.github.io/svgomg/) is a GUI for SVGO.
 * [In-depth articles on SVG](https://sarasoueidan.com/tags/svg/) by Sara Soueidan.
