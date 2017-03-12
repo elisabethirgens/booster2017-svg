@@ -1,18 +1,18 @@
 # Creative SVG for Developers
 
-Workshop for [Booster 2017](https://www.boosterconf.no/talks/860)
+### Workshop for [Booster 2017](https://www.boosterconf.no/talks/860) — Friday before lunch!
 
-Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand coded in an editor. In this workshop, we are going to do both! \o/ We’ll play around with basic shapes and paths in Inkscape, before we dive into `<path>` and `<polygon>` to bring stunning designs the browser.
-
-If your happy place is usually filled with code — and drawing sounds scary — this workshop is especially for you.
+Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand coded in an editor. In this workshop, we are going to do both! \o/ If your happy place is usually filled with code — and drawing sounds scary — this workshop is especially for you.
 
 ![Scribbled line with a ghost.](https://cdn.rawgit.com/bring/booster2017-svg/master/scary.svg)
 
-## Exercises
+## Exercise: Create a landscape
 
 “But I can’t draw,” you say…? Sure you can! Because basic shapes and simple lines will do just fine. There is so much we can make without any classic drawing skills, and this is what we want to show you.
 
 ![Colourful circles.](https://cdn.rawgit.com/bring/booster2017-svg/master/circles.svg)
+
+Your task is to play around with drawing and writing SVG. Use this [HTML & CSS to get you started](starter). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
 
 ## Useful links
 
