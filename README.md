@@ -12,7 +12,7 @@ Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand code
 
 ![Colourful circles.](https://cdn.rawgit.com/bring/booster2017-svg/master/circles.svg)
 
-Your task is to play around with drawing and writing SVG. Use this [HTML & CSS to get you started](starter). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
+Your task is to play around with drawing and writing SVG. Use this [HTML & CSS to get you started](https://bring.github.io/booster2017-svg/). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
 
 ## Useful links
 
