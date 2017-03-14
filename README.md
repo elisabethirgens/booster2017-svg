@@ -6,13 +6,27 @@ Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand code
 
 ![Scribbled line with a ghost.](https://cdn.rawgit.com/bring/booster2017-svg/master/scary.svg)
 
-## Exercise: Create a landscape
-
 “But I can’t draw,” you say…? Sure you can! Because basic shapes and simple lines will do just fine. There is so much we can make without any classic drawing skills, and this is what we want to show you.
 
 ![Colourful circles.](https://cdn.rawgit.com/bring/booster2017-svg/master/circles.svg)
 
-Your task is to play around with drawing and writing SVG. Use this [HTML & CSS to get you started](https://bring.github.io/booster2017-svg/). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
+## Exercise #1: Warm up!
+
+Introduction to some basic shapes in this
+[warm-up codepen](http://codepen.io/elisabethirg/pen/cf1b662d258fcc495c765a6e5b7ef3ad).
+
+## Exercise #2: Get to know Inkscape
+
+* Install [Inkscape](http://inkscape.org/)
+* File > Document properties > Set page size to 2000 x 500 px
+* Play around with rectangles, circles, bezier curves and straight lines
+* Save as Plain SVG
+* Check out saved `.svg` in an editor and in a browser
+* Look into cleaning up the code with [SVGOMG](https://jakearchibald.github.io/svgomg/)
+
+## Exercise #3: Create a landscape
+
+Your task is to play around with drawing and writing SVG. Have fun! Use this [HTML & CSS to get you started](https://bring.github.io/booster2017-svg/). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
 
 ## Useful links
 
