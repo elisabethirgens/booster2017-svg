@@ -36,13 +36,13 @@ There is only one rule: Victor. Make him small or large, change his appearance, 
 
 big city / small town / countryside / seaside and sailboats / under water / over the clouds
 
-a day at the beach / island 🌴 / river / winding road / lone tree / desert 🐪 / on the moon / in space / on a distant planet / up in heaven / down in hell
+a day at the beach / island 🌴 / river / winding road / lone tree / desert 🐪 / on the moon / in space / on a distant planet / up in heaven / down in hell 😈
 
-Bergen / Oslo / New Delhi / Paris / London / Golden Gate bridge / pyramids in Egypt / Antarctica 🐧
+Bergen / Oslo / New Delhi / Paris / London / Golden Gate bridge / pyramids in Egypt / Antarctica 🐧 / any actual geographic location
 
-*Think about if it is:* day, night, sunset, cloudy, snowing, winter, summer, or a total fantasy scene with green sky and pink mountains?!
+*Think about if it is:* day, night, sunset, cloudy, snowing, winter, summer, or a total abstract fantasy scene with green sky and pink mountains?! Want to recreate a famous work of art?!
 
-*Are there some…* trees? birds? clouds? famous landmarks? river, road or who knows, maybe an erupting volcano?
+**Are there some…** trees? birds? clouds? famous landmarks? river, road or who knows, maybe an erupting volcano?
 
 ## Useful links
 
