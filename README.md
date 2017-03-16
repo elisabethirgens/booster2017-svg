@@ -32,6 +32,18 @@ There is only one rule: Victor. Make him small or large, change his appearance, 
 
 ![Victor](https://cdn.rawgit.com/bring/booster2017-svg/1beca2f6/victor.svg)
 
+### Spark list with ideas for your landscape theme
+
+big city / small town / countryside / seaside and sailboats / under water / over the clouds
+
+a day at the beach / island 🌴 / river / winding road / lone tree / desert 🐪 / on the moon / in space / on a distant planet / up in heaven / down in hell
+
+Bergen / Oslo / New Delhi / Paris / London / Golden Gate bridge / pyramids in Egypt / Antarctica 🐧
+
+*Think about if it is:* day, night, sunset, cloudy, snowing, winter, summer, or a total fantasy scene with green sky and pink mountains?!
+
+*Are there some…* trees? birds? clouds? famous landmarks? river, road or who knows, maybe an erupting volcano?
+
 ## Useful links
 
 * [Pocket Guide to Writing SVG](http://svgpocketguide.com/book/) by Joni Trythall.
@@ -44,3 +56,4 @@ There is only one rule: Victor. Make him small or large, change his appearance, 
 * [SVG element reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Element) on MDN.
 
 ![Browser with dummy design.](https://cdn.rawgit.com/bring/booster2017-svg/master/browser.svg)
+
