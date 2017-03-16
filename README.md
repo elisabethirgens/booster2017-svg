@@ -28,9 +28,9 @@ Introduction to some basic shapes in this
 
 Your task is to play around with drawing and writing SVG. Have fun! Use this [HTML & CSS to get you started](https://bring.github.io/booster2017-svg/). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
 
-There is only one rule: Victor. Make him small or large, change his appearance, give him props or animate his arms. But you have to add him somewhere in your landscape.
+There is only one rule: Victor Vector. Make him small or large, change his appearance, give him props or animate his arms. But you have to add him somewhere in your landscape.
 
-![Victor](https://cdn.rawgit.com/bring/booster2017-svg/1beca2f6/victor.svg)
+![Victor Vector](https://cdn.rawgit.com/bring/booster2017-svg/1beca2f6/victor.svg)
 
 ### Spark list with ideas for your landscape theme
 
