@@ -12,6 +12,8 @@ Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand code
 
 ## Exercise #1: Warm up!
 
+Say hello in a comment on [this Gist](https://gist.github.com/elisabethirgens/093e1d79bf9af4bd8db0c4a38ab8c433) so we can add you as collaborators.
+
 Introduction to some basic shapes in this
 [warm-up codepen](http://codepen.io/elisabethirg/pen/cf1b662d258fcc495c765a6e5b7ef3ad).
 
