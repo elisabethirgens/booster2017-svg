@@ -40,7 +40,7 @@ a day at the beach / island 🌴 / river / winding road / lone tree / desert �
 
 Bergen / Oslo / New Delhi / Paris / London / Golden Gate bridge / pyramids in Egypt / Antarctica 🐧 / any actual geographic location
 
-*Think about if it is:* day, night, sunset, cloudy, snowing, winter, summer, or a total abstract fantasy scene with green sky and pink mountains?! Want to recreate a famous work of art?!
+**Think about if it is…** day, night, sunset, cloudy, snowing, winter, summer, or a total abstract fantasy scene with green sky and pink mountains?! Want to recreate a famous work of art?!
 
 **Are there some…** trees? birds? clouds? famous landmarks? river, road or who knows, maybe an erupting volcano?
 
