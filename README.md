@@ -28,7 +28,7 @@ Introduction to some basic shapes in this
 
 ## Exercise #3: Create a landscape
 
-Your task is to play around with drawing and writing SVG. Have fun! Use this [HTML & CSS to get you started](https://bring.github.io/booster2017-svg/). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
+Your task is to play around with drawing and writing SVG. Have fun! Use this [HTML & CSS to get you started](https://elisabethirgens.github.io/booster2017-svg/). Delete the `<polygon>` and `<path>` to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.
 
 There is only one rule: Victor Vector. Make him small or large, change his appearance, give him props or animate his arms. But you have to add him somewhere in your landscape.
 
