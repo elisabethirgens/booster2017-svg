@@ -4,10 +4,94 @@
   <title>SVG</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="styles.css">
   <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <style type="text/css">
+    
+    html {
+        background-color: #eee;
+        color: #444;
+        overflow-y: scroll;
+        min-height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    body {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #444;
+    }
+
+    h1 {
+        font-family: 'Bungee';
+        font-size: 2.5rem;
+        color: #666;
+        line-height: 1;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content {
+        text-align: center;
+        width: 90%;
+        max-width: 40rem;
+    }
+
+    .next-page {
+        height: 10rem;
+        width: 10rem;
+        position: fixed;
+        right: 0;
+        top: 40vh;
+    }
+
+    .illustration-header,
+    .illustration-footer {
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .illustration-header {
+        top: 0;
+    }
+
+    .illustration-footer {
+        bottom: 0;
+    }
+
+    /* This is Victor. Place him anywhere you want! */
+    .mascot {
+        position: fixed;
+        top: 50vh;
+        right: 12vw;
+        width: 10rem;
+        height: auto;
+        z-index: 1;
+    }
+
+  </style>
 </head>
 <body>
+
+  <!-- Link this up to the next number -->
+  <a href="#">
+    <svg class="next-page">
+      <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
+    </svg>
+  </a>
 
   <svg class="illustration-header"
     width="2000px" height="500px" viewBox="0 0 2000 500">
