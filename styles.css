@@ -80,3 +80,12 @@ p {
 .illustration-footer {
     bottom: 0;
 }
+
+.mascot {
+    position: fixed;
+    top: 50vh;
+    right: 10vw;
+    width: 10rem;
+    height: auto;
+    z-index: 1;
+}
