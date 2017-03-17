@@ -1,0 +1,97 @@
+@mixin createBlinkAnimation ($id, $colorStart, $colorEnd) {
+  @keyframes colorBlink-#{$id} {
+    0% { fill: $colorStart; }
+    50% { fill: $colorEnd; }
+    100% { fill: $colorStart; }
+  }
+}
+
+@include createBlinkAnimation(1, red, green);
+@include createBlinkAnimation(2, green, red);
+@include createBlinkAnimation(3, yellow, blue);
+@include createBlinkAnimation(4, blue, yellow);
+@include createBlinkAnimation(5, orange, teal);
+@include createBlinkAnimation(6, teal, orange);
+@include createBlinkAnimation(7, aqua, pink);
+@include createBlinkAnimation(8, pink, aqua);
+
+@keyframes rotate {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(90deg); }
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(270deg); }
+  100% { transform: rotate(360deg); }
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.fixed-heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.body-bg {
+  position: absolute;
+  transform-origin: center;
+  height: 500px;
+  width: 500px;
+  background-image: linear-gradient(to bottom, #40FFF3, #D8A5FF);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  border-radius: 50%;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 75vh;
+}
+
+.optimus {
+  filter: drop-shadow( 0px 0px 5px rgba(#000, .5) );
+  $parts: #left-eye #forehead #right-eye #left-cheek #nose #mouth #jaw #right-cheek;
+
+  transform: scale(.5);
+
+  #left-eye,
+  #forehead,
+  #right-eye,
+  #left-cheek,
+  #nose,
+  #mouth,
+  #jaw,
+  #right-cheek {
+    // animation-delay: .5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+  }
+
+  // #left-eye { animation-name: colorBlink-1; }
+  // #forehead { animation-name: colorBlink-2; }
+  // #right-eye { animation-name: colorBlink-3; }
+  // #left-cheek { animation-name: colorBlink-4; }
+  // #nose { animation-name: colorBlink-5; }
+  // #mouth { animation-name: colorBlink-6; }
+  // #jaw { animation-name: colorBlink-7; }
+  // #right-cheek { animation-name: colorBlink-8; }
+
+  $iterator: 1;
+  $delay: 0;
+
+  @each $part in $parts{
+    #{$part} {
+      animation-name: colorBlink-#{ $iterator };
+      animation-delay: #{$delay}ms;
+    }
+
+    $iterator: $iterator + 1;
+    $delay: $delay + 100;
+  }
+}
