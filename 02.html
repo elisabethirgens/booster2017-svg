@@ -90,6 +90,8 @@
         var min = -2500;
         var max = 7000;
         var cloud = document.querySelector("#cloud");
+        var rightLeg = document.querySelector("#right-leg");
+        var leftLeg = document.querySelector("#left-leg");
 
         var x = min;
 
@@ -101,6 +103,9 @@
 
             cloud.setAttribute("transform", "translate(" + x + ",0)");
 
+            leftLeg.setAttribute("transform", "rotate(" +((x % 100)/10) + ")");
+
+            rightLeg.setAttribute("transform", "rotate(" +(-(x % 100)/10) + ")");
 
             window.requestAnimationFrame(onAnimationFrame)
         }
@@ -228,18 +233,11 @@
             style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
             d="M 16.162441,-2325.588 C 2036.4675,-1113.4049 2068.7924,-1089.1613 2068.7924,-1089.1613 l 1688.9751,-1292.9952 2076.8736,1398.0511 703.0662,-331.33 549.5229,113.1371"
             id="path5729" transform="translate(0,2490.9449)"/>
-    
+
 
   </svg>
 
 
-  <div class="wrapper">
-    <div class="content">
-      <h1>Workshop exercise:<br> Create a landscape</h1>
-      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
-      </p>
-    </div>
-  </div>
 
 
 
