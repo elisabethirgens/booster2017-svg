@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
   <style type="text/css">
-
+    
     html {
-        background-color: #3a7bad ;
+        background-color: #eee;
         color: #444;
         overflow-y: scroll;
         min-height: 100%;
@@ -36,12 +36,13 @@
     .wrapper {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         width: 100vw;
-        height: 70vh;
+        height: 100vh;
     }
 
     .content {
+        text-align: center;
         width: 90%;
         max-width: 40rem;
     }
@@ -71,21 +72,10 @@
         bottom: 0;
     }
 
-    .heaven {
-      height: 30vh;
-      background: lightblue;
-    }
-
-    .sunrise {
-      position: fixed;
-      top: 90px;
-      left: 300px;
-    }
-
     /* This is Victor. Place him anywhere you want! */
     .mascot {
         position: fixed;
-        top: 72vh;
+        top: 50vh;
         right: 12vw;
         width: 10rem;
         height: auto;
@@ -97,36 +87,21 @@
 <body>
 
   <!-- Link this up to the next number -->
-
-  <a href="29.html">
+  <a href="02.html">
     <svg class="next-page">
       <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
     </svg>
   </a>
 
-  <div class="heaven">
-    <svg x="0px" y="0px" width="1000px" height="300px" viewBox="0 0 1200 400">
-      <line fill="none" stroke="#f55" stroke-width="15" x1="280" y1="250" x2="350" y2="290" stroke-linecap="round"/>
-      <line fill="none" stroke="#f55" stroke-width="15" x1="400" y1="180" x2="430" y2="230" stroke-linecap="round"/>
-      <line fill="none" stroke="#f55" stroke-width="15" x1="520" y1="150" x2="530" y2="200" stroke-linecap="round"/>
-      <line fill="none" stroke="#f55" stroke-width="15" x1="630" y1="150" x2="620" y2="200" stroke-linecap="round"/>
-      <line fill="none" stroke="#f55" stroke-width="15" x1="770" y1="180" x2="730" y2="220" stroke-linecap="round"/>
-      <line fill="none" stroke="#f55" stroke-width="15" x1="860" y1="250" x2="820" y2="280" stroke-linecap="round"/>
+  <svg class="illustration-header"
+    width="2000px" height="500px" viewBox="0 0 2000 500">
+    <polygon fill="#E04F55" points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
+  </svg>
 
-    </svg>
-    <svg class="sunrise" width="400" height="200" viewBox="0 0 800 200">
-      <path d="M19.972 199.963c155.797-214.405 609.09-168.15 691.52 0" fill="#f55" fill-rule="evenodd" stroke="#ff8080" stroke-width=".845"/>
-    </svg>
-  </div>
   <div class="wrapper">
-
     <div class="content">
       <h1>Workshop exercise:<br> Create a landscape</h1>
-      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit.
-         Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans,
-          or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write
-          something here to complement the scenery — or just delete the text. But don’t forget to take Victor
-           Vector on an adventure with you!
+      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
       </p>
     </div>
   </div>
@@ -141,18 +116,19 @@
         <path id="right-arm" d="M330,185c30-25,90-93,130-35"/>
         <path id="left-leg" d="M120,450c0,0,40,5.7,50,0s40-170,40-170"/>
         <path id="right-leg" d="M260,310c0,0-7.3,121,0,125s40,0,40,0"/>
-      </g>
-      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/>
-      <g id="eyes">
+      </g>  
+      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/><g id="eyes">
         <path fill="#FFFFFF" d="M201.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C205.1,125.1,202.2,158.1,201.4,178.8z"/>
         <circle fill="CadetBlue" cx="237" cy="155" r="15"/>
         <path fill="#FFFFFF" d="M260.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C264.1,125.1,261.2,158.1,260.4,178.8z"/>
         <circle fill="CadetBlue" cx="296" cy="155" r="15"/>
-      </g>
-    </g>
+      </g>  
+    </g>  
   </svg>
-  <svg class="illustration-footer" width="2000" height="500" viewBox="0 0 2000 500">
-    <path d="M2.02 502.02V356.558c651.044 69.17 1392.47-165.545 1998.082-14.142 1.972 53.26 3.352 133.405 4.04 161.625" fill="#ffe680" fill-rule="evenodd" stroke="#ffe680"/>
+
+  <svg class="illustration-footer"
+    width="2000px" height="500px" viewBox="0 0 2000 500">
+    <path fill="#5F9EA0" d="M2000,150c-49,30.7-182.3,127-233.3,133.3c-98.3,12.7-162.3-75-266.7-16.7c-158.3,88.3-321-88.3-500-33.3 c-221,68-373.3,151.3-600,50c-183.3-82-244.3-93.7-400,16.7v200h2000V150z"/>
   </svg>
 
 </body>
