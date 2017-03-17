@@ -90,6 +90,22 @@
     //   var segments = leftArm.normalizedPathSegList ;
     //   console.log(leftArm, segments)
     // }, 1500)
+
+    
+    var d = 1;
+
+    setInterval(function() {
+      var sirkel = document.getElementById("sirkel");
+console.log(sirkel)
+      var cx = parseInt(sirkel.getAttribute("cx"));
+      if (cx> 90 && d > 0)
+        d = -1;
+      
+      if (cx <= 10 && d < 0)
+        d = 1;
+      
+      sirkel.setAttribute("cx",cx + d * 1);
+    }, 20)
   </script>
 </head>
 <body>
@@ -113,6 +129,7 @@
       </p>
     </div>
   </div> -->
+
 
   <svg class="mascot"
      width="500px" height="500px" viewBox="0 0 500 500">
@@ -318,6 +335,9 @@
   </g>
 </svg>
 
+  <svg x="0px" y="0px" width="100%" height="1000px" viewBox="0 0 100 100">
+    <circle id="sirkel" fill="red"  stroke-width="3" cx="10" cy="10" r="5"/>
+  </svg>
 
 </body>
 </html>
