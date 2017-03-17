@@ -90,6 +90,8 @@
         var min = -2500;
         var max = 7000;
         var cloud = document.querySelector("#cloud");
+        var rightLeg = document.querySelector("#right-leg");
+        var leftLeg = document.querySelector("#left-leg");
 
         var x = min;
 
@@ -101,6 +103,9 @@
 
             cloud.setAttribute("transform", "translate(" + x + ",0)");
 
+            leftLeg.setAttribute("transform", "rotate(" +((x % 100)/10) + ")");
+
+            rightLeg.setAttribute("transform", "rotate(" +(-(x % 100)/10) + ")");
 
             window.requestAnimationFrame(onAnimationFrame)
         }
