@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>SVG 08</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <style type="text/css">
+    
+    html {
+        background-color: #eee;
+        color: #444;
+        overflow-y: scroll;
+        min-height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    body {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #444;
+    }
+
+    h1 {
+        font-family: 'Bungee';
+        font-size: 2.5rem;
+        color: #666;
+        line-height: 1;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content {
+        text-align: center;
+        width: 90%;
+        max-width: 40rem;
+    }
+
+    .next-page {
+        height: 10rem;
+        width: 10rem;
+        position: fixed;
+        right: 0;
+        top: 40vh;
+    }
+
+    .illustration-header,
+    .illustration-footer {
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .illustration-header {
+        top: 0;
+    }
+
+    .illustration-footer {
+        bottom: 0;
+    }
+
+    /* This is Victor. Place him anywhere you want! */
+    .mascot {
+        position: fixed;
+        top: 50vh;
+        right: 32vw;
+        width: 10rem;
+        height: auto;
+        z-index: 1;
+    }
+
+  </style>
+  <script>
+    // setInterval(function() {
+    //   var victor = document.getElementById("victor");
+    //   var leftArm = document.getElementById("left-arm");
+    //   var segments = leftArm.normalizedPathSegList ;
+    //   console.log(leftArm, segments)
+    // }, 1500)
+
+    
+    var d = 1;
+
+    setInterval(function() {
+      var sirkel = document.getElementById("sirkel");
+console.log(sirkel)
+      var cx = parseInt(sirkel.getAttribute("cx"));
+      if (cx> 90 && d > 0)
+        d = -1;
+      
+      if (cx <= 10 && d < 0)
+        d = 1;
+      
+      sirkel.setAttribute("cx",cx + d * 1);
+    }, 20)
+  </script>
+</head>
+<body>
+
+  <!-- Link this up to the next number -->
+  <a href="09.html">
+    <svg class="next-page">
+      <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
+    </svg>
+  </a>
+
+  <!-- <svg class="illustration-header"
+    width="2000px" height="500px" viewBox="0 0 2000 500">
+    <polygon fill="#E04F55" points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
+  </svg> -->
+
+ <!--  <div class="wrapper">
+    <div class="content">
+      <h1>Workshop exercise:<br> Create a landscape</h1>
+      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
+      </p>
+    </div>
+  </div> -->
+
+
+  <svg class="mascot"
+     width="500px" height="500px" viewBox="0 0 500 500">
+    <g id="victor">
+      <path id="body" fill="CadetBlue" d="M155,235c-2.9,52.1,84.4,89.9,125,90c79,0.3,60.6-100.3,60-155c-0.6-54.7,34.6-117.6-95-105
+        C156.2,73.7,157.6,188.4,155,235z"/>
+      <g id="arms-and-legs" fill="none" stroke="CadetBlue" stroke-width="20" stroke-linecap="round">
+        <path id="left-arm" d="M50,150c0.1,34.8,61.5,117,120,70"/>
+        <path id="right-arm" d="M330,185c30-25,90-93,130-35"/>
+        <path id="left-leg" d="M120,450c0,0,40,5.7,50,0s40-170,40-170"/>
+        <path id="right-leg" d="M260,310c0,0-7.3,121,0,125s40,0,40,0"/>
+      </g>  
+      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/><g id="eyes">
+        <path fill="#FFFFFF" d="M201.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C205.1,125.1,202.2,158.1,201.4,178.8z"/>
+        <circle fill="CadetBlue" cx="237" cy="155" r="15"/>
+        <path fill="#FFFFFF" d="M260.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C264.1,125.1,261.2,158.1,260.4,178.8z"/>
+        <circle fill="CadetBlue" cx="296" cy="155" r="15"/>
+      </g>  
+    </g>  
+  </svg>
+
+  <svg class="illustration-footer"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="2000"
+   height="500"
+   viewBox="0 0 529.16668 132.29166"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.1 r15371"
+   sodipodi:docname="drawing.svg">
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4729">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1;"
+         offset="0"
+         id="stop4725" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:0;"
+         offset="1"
+         id="stop4727" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4673">
+      <stop
+         style="stop-color:#4d9949;stop-opacity:1;"
+         offset="0"
+         id="stop4669" />
+      <stop
+         style="stop-color:#246321;stop-opacity:1"
+         offset="1"
+         id="stop4671" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4651">
+      <stop
+         style="stop-color:#656362;stop-opacity:1"
+         offset="0"
+         id="stop4647" />
+      <stop
+         style="stop-color:#beb3af;stop-opacity:1"
+         offset="1"
+         id="stop4649" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient4545">
+      <stop
+         style="stop-color:#cbffff;stop-opacity:1;"
+         offset="0"
+         id="stop4541" />
+      <stop
+         style="stop-color:#0fffff;stop-opacity:0.05025126"
+         offset="1"
+         id="stop4543" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4545"
+       id="linearGradient4547"
+       x1="183.62083"
+       y1="297.26462"
+       x2="184.15002"
+       y2="165.50211"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4651"
+       id="linearGradient4653"
+       x1="248.57603"
+       y1="309.52731"
+       x2="316.04517"
+       y2="158.9794"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4673"
+       id="linearGradient4675"
+       x1="173.30208"
+       y1="345.28647"
+       x2="123.2958"
+       y2="220.66771"
+       gradientUnits="userSpaceOnUse" />
+    <radialGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4729"
+       id="radialGradient4731"
+       cx="264.58334"
+       cy="195.92917"
+       fx="264.58334"
+       fy="195.92917"
+       r="26.458334"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="647.91566"
+     inkscape:cy="251.91795"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-164.70834)">
+    <rect
+       id="rect3680"
+       width="529.16669"
+       height="132.29167"
+       x="0"
+       y="164.70834"
+       style="fill:url(#linearGradient4547);fill-opacity:1;stroke:none;stroke-width:0.74321538;stroke-opacity:1;opacity:1" />
+    <ellipse
+       style="opacity:1;fill:url(#radialGradient4731);fill-opacity:1;stroke:none;stroke-width:35.04414749;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.59798997"
+       id="path4707"
+       cx="264.58334"
+       cy="195.92917"
+       r="26.458334" />
+    <circle
+       style="opacity:1;fill:#f6f6cf;fill-opacity:1;stroke:none;stroke-width:26.45833333;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4679"
+       cy="194.87083"
+       cx="264.84793"
+       r="10.054167" />
+    <path
+       style="fill:url(#linearGradient4653);fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 0,218.41876 c 10.07471,1.6e-4 21.884703,-2.9344 30.1625,-8.20209 9.423246,-5.99661 25.597513,-34.68277 35.983332,-31.22083 6.181368,2.06046 13.655175,16.83686 15.345834,22.75417 1.934167,6.76958 23.315234,20.66939 29.104164,26.45833 2.52811,2.52811 2.63503,9.25501 5.82084,10.84792 1.96968,0.98484 12.76053,1.52696 14.2875,0 0.93579,-0.9358 5.33714,-1.8604 5.55624,-3.175 0.93238,-5.59426 7.12675,-11.48388 10.05417,-15.875 3.22421,-4.83631 10.79323,-5.48789 16.13958,-12.17084 2.67209,-3.34011 1.29666,-7.18817 3.175,-10.31875 1.06681,-1.77801 6.34828,-14.37684 9.26042,-12.43541 4.32907,2.88604 13.33184,16.02543 13.75833,20.90208 0,0 4.58264,11.28193 6.08542,14.2875 2.58777,5.17555 11.00526,5.44667 13.22917,11.37708 1.64753,4.39342 4.87749,16.01306 11.64166,13.75834 14.93955,-4.97985 18.22277,-25.58488 29.89792,-34.925 4.48342,-3.58674 11.48628,-3.54879 15.34583,-7.40834 5.88812,-5.88812 9.4959,-17.78595 17.72709,-19.84375 15.60303,-3.90076 21.21056,19.07926 29.89791,24.87084 9.09262,6.06173 14.75769,5.463 22.48959,11.90625 26.82838,16.45742 40.35799,18.48098 61.11875,2.91041 4.71083,-3.53313 7.74425,-13.09314 12.43542,-17.19791 6.26654,-5.48323 7.12487,-11.9094 18.25625,-10.05417 20.68366,3.44728 38.67036,31.06794 61.64791,19.57917 11.26329,-5.63165 7.26645,-57.97742 41.275,-42.8625 L 529.16669,297 H 0 Z"
+       id="path4565"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssssccsscccsscssssccccsscccc" />
+    <circle
+       id="path4643"
+       style="fill:#000000;stroke:none"
+       cx="0"
+       cy="218.41876"
+       r="1.5" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 529.16669,297 0.52914,-124.61874"
+       id="path4645"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:url(#linearGradient4675);stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 0,297 v -35.98333 c 0,0 18.25625,-1.85208 30.1625,-14.55208 11.906249,-12.7 117.21041,2.91042 117.21041,2.91042 0,0 58.20834,29.36875 78.84584,15.08125 20.6375,-14.2875 55.03333,-12.43542 55.03333,-12.43542 0,0 102.39375,-22.225 114.56458,-6.35 12.17083,15.875 88.10625,12.17083 91.01667,6.61458 2.91041,-5.55625 42.59791,-29.63333 42.59791,-29.63333 L 529.16669,297 Z"
+       id="path4667"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
+
+  <svg x="0px" y="0px" width="100%" height="1000px" viewBox="0 0 100 100">
+    <circle id="sirkel" fill="red"  stroke-width="3" cx="10" cy="10" r="5"/>
+  </svg>
+
+</body>
+</html>

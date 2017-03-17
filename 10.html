@@ -76,7 +76,7 @@
     .mascot {
         position: fixed;
         top: 50vh;
-        right: 12vw;
+        left: 12px;
         width: 10rem;
         height: auto;
         z-index: 1;
@@ -87,24 +87,11 @@
 <body>
 
   <!-- Link this up to the next number -->
-  <a href="02.html">
+  <a href="11.html">
     <svg class="next-page">
       <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
     </svg>
   </a>
-
-  <svg class="illustration-header"
-    width="2000px" height="500px" viewBox="0 0 2000 500">
-    <polygon fill="#E04F55" points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
-  </svg>
-
-  <div class="wrapper">
-    <div class="content">
-      <h1>Workshop exercise:<br> Create a landscape</h1>
-      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
-      </p>
-    </div>
-  </div>
 
   <svg class="mascot"
      width="500px" height="500px" viewBox="0 0 500 500">
@@ -117,19 +104,40 @@
         <path id="left-leg" d="M120,450c0,0,40,5.7,50,0s40-170,40-170"/>
         <path id="right-leg" d="M260,310c0,0-7.3,121,0,125s40,0,40,0"/>
       </g>  
-      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/><g id="eyes">
+      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/>
+      <g id="eyes">
         <path fill="#FFFFFF" d="M201.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C205.1,125.1,202.2,158.1,201.4,178.8z"/>
         <circle fill="CadetBlue" cx="237" cy="155" r="15"/>
         <path fill="#FFFFFF" d="M260.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C264.1,125.1,261.2,158.1,260.4,178.8z"/>
         <circle fill="CadetBlue" cx="296" cy="155" r="15"/>
-      </g>  
-    </g>  
+      </g>
+    </g>
+    <animate xlink:ref="#eyes" attributeType="CSS" attributeName="height" from="296" to="0" dur="5s" repeatCount="once" >
   </svg>
 
-  <svg class="illustration-footer"
-    width="2000px" height="500px" viewBox="0 0 2000 500">
-    <path fill="#5F9EA0" d="M2000,150c-49,30.7-182.3,127-233.3,133.3c-98.3,12.7-162.3-75-266.7-16.7c-158.3,88.3-321-88.3-500-33.3 c-221,68-373.3,151.3-600,50c-183.3-82-244.3-93.7-400,16.7v200h2000V150z"/>
-  </svg>
+<svg viewBox="0 0 529.16665 132.29167" height="1000px" width="2000px">
+  <defs>
+    <linearGradient id="a">
+      <stop offset="0" stop-color="#fc0"/>
+      <stop offset="1" stop-color="#fc0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 .15977 0 214.59)" r="265.2" fy="255.4" fx="264.8" cy="255.4" cx="264.8" id="b" xlink:href="#a"/>
+  </defs>
+  <g transform="translate(0 -164.708)">
+    <path fill="#59f" d="M-.4 164H530v133.8H-.5z"/>
+    <path d="M0 246.7c56 11.8 94.5-10 138.3-21.5 37.7-6.7 68.3 4.5 100.2 12 65.3 9.7 77-10.8 113.8-17.3 24-7 65 36.4 92.6 22.6 33.7-12.2 90-36 84.5-28l.4 83.2L-.5 297z" fill="#004e00"/>
+    <path d="M0 246.7c56 11.8 94.5-10 138.3-21.5 37.7-6.7 68.3 4.5 100.2 12 65.3 9.7 77-10.8 113.8-17.3 24-7 65 36.4 92.6 22.6 33.7-12.2 90-36 84.5-28l.4 83.2H-.5z" fill="url(#b)"/>
+    <ellipse ry="8.1" rx="19.7" cy="194.4" cx="69.9" fill="#aef"/>
+    <ellipse ry="8.7" rx="18.3" cy="185.9" cx="89.8" fill="#aef"/>
+    <ellipse ry="10.8" rx="14.7" cy="197.4" cx="89.2" fill="#aef"/>
+    <ellipse ry="7.6" rx="17" cy="192.7" cx="114.9" fill="#aef"/>
+    <ellipse ry="5.1" rx="20.8" cy="176.6" cx="184.8" fill="#aef"/>
+    <ellipse ry="6.6" rx="22.5" cy="183.4" cx="186.5" fill="#aef"/>
+    <ellipse ry="4.7" rx="17" cy="179.3" cx="213.6" fill="#aef"/>
+    <ellipse ry="9.8" rx="19.3" cy="188.5" cx="207.9" fill="#aef"/>
+  </g>
+</svg>
+
 
 </body>
 </html>
