@@ -72,6 +72,12 @@
         bottom: 0;
     }
 
+   .tree-swing {
+       position: fixed;
+       bottom: 10vh;
+       left: 30px;
+   }
+
     /* This is Victor. Place him anywhere you want! */
     .mascot {
         position: fixed;
@@ -87,49 +93,102 @@
 <body>
 
   <!-- Link this up to the next number -->
-  <a href="#">
+  <a href="07.html">
     <svg class="next-page">
       <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
     </svg>
   </a>
 
   <svg class="illustration-header"
-    width="2000px" height="500px" viewBox="0 0 2000 500">
-    <polygon fill="#E04F55" points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
+       width="2000px" height="500px" viewBox="0 0 2000 500">
+      <defs>
+          <clipPath id="mountainscape">
+              <polygon points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
+          </clipPath>
+      </defs>
+      <polygon fill="#E04F55" points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
+      <circle id="sun" fill="yellow" cx="1000" cy="250" r="200" clip-path="url(#mountainscape)"/>
   </svg>
 
   <div class="wrapper">
-    <div class="content">
-      <h1>Workshop exercise:<br> Create a landscape</h1>
-      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
-      </p>
+      <div class="content">
+          <h1>I Reminisce on This</h1>
+         <p>
+I reminisce on this:<br>
+A time more filled with bliss.<br>
+When school is out,<br>
+And the children shout.<br>
+Our minds now worry-free,<br>
+We fill our hearts with glee.<br>
+I reminisce on this.<br>
+         </p>
+         <p>
+I reminisce on this:<br>
+A time that I do miss.<br>
+You can call it summer vacation,<br>
+When with no education,<br>
+We go to visit family<br>
+And maybe to travel oversea<br>
+I reminisce on this.<br>
+         </p>
+         <p>
+I reminisce on this:<br>
+A time of such remiss.<br>
+We forget responsibility,<br>
+And remember the ability<br>
+To go out, and have some fun,<br>
+But now, with it all done,<br>
+I reminisce on this.<br>
+         </p>
+         <p>
+             Daniel James Peach
+         </p>
     </div>
   </div>
 
+  <svg class="tree-swing" xmlns="http://www.w3.org/2000/svg" width="375" height="600" viewBox="0 0 375 600">
+      <g transform="scale(0.5, 0.5)">
+          <g fill="olive">
+              <path d="M313.35 576.552h200v620h-200z"/>
+              <path d="M124.78 702.266h231.428v34.286h-231.43z"/>
+          </g>
+          <path fill="green" d="M350.77 73.945a110 104.286 78.6 0 0-81.292 87.874 110 104.286 78.6 0 0-79.41-17.582A110 104.286 78.6 0 0 109.58 272.68a110 104.286 78.6 0 0 20.173 45.485 110 104.286 78.6 0 0-31.147 102.46 110 104.286 78.6 0 0 69.808 82.92 110 104.286 78.6 0 0-.124 45.848 110 104.286 78.6 0 0 123.97 87.217 110 104.286 78.6 0 0 37.182-16 110 104.286 78.6 0 0 109.68 50.51 110 104.286 78.6 0 0 48.43-25.146 110 104.286 78.6 0 0 49.03 2.58 110 104.286 78.6 0 0 72.357-58.33 110 104.286 78.6 0 0 23.368-1.777 110 104.286 78.6 0 0 80.486-128.442 110 104.286 78.6 0 0-21.1-46.808 110 104.286 78.6 0 0 17.528-86.545 110 104.286 78.6 0 0-84.482-87.08 110 104.286 78.6 0 0-.89-39.982 110 104.286 78.6 0 0-123.97-87.217 110 104.286 78.6 0 0-37.243 16.047A110 104.286 78.6 0 0 350.77 73.945z"/>
+          <g transform="translate(-206.65 89.904)">
+              <g fill="#e3dedb">
+                  <ellipse cx="430" cy="882.362" ry="141.429" rx="67.143"/>
+                  <ellipse cx="477.143" cy="883.791" ry="144.286" rx="67.143"/>
+                  <path d="M425.714 743.79h57.143v271.43h-57.143z"/>
+              </g>
+              <ellipse cx="475.714" cy="893.791" fill="#fff" rx="15.714" ry="81.429"/>
+              <g id="victor" transform="translate(100,500)">
+                  <path id="body" fill="yellow" d="M155,235c-2.9,52.1,84.4,89.9,125,90c79,0.3,60.6-100.3,60-155c-0.6-54.7,34.6-117.6-95-105
+        C156.2,73.7,157.6,188.4,155,235z"/>
+                  <g id="arms-and-legs" fill="none" stroke="yellow" stroke-width="20" stroke-linecap="round">
+                      <path id="left-arm" d="M50,150c0.1,34.8,61.5,117,120,70"/>
+                      <path id="right-arm" d="M330,185c30-25,90-93,130-35"/>
+                      <path id="left-leg" d="M120,450c0,0,40,5.7,50,0s40-170,40-170"/>
+                      <path id="right-leg" d="M260,310c0,0-7.3,121,0,125s40,0,40,0"/>
+                  </g>  
+                  <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/><g id="eyes">
+                      <path fill="#FFFFFF" d="M201.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C205.1,125.1,202.2,158.1,201.4,178.8z"/>
+                      <circle fill="yellow" cx="237" cy="155" r="15"/>
+                      <path fill="#FFFFFF" d="M260.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C264.1,125.1,261.2,158.1,260.4,178.8z"/>
+                      <circle fill="yellow" cx="296" cy="155" r="15"/>
+                  </g>  
+              </g>  
+          </g>
+      </g>
+  </svg>
+
+
   <svg class="mascot"
      width="500px" height="500px" viewBox="0 0 500 500">
-    <g id="victor">
-      <path id="body" fill="CadetBlue" d="M155,235c-2.9,52.1,84.4,89.9,125,90c79,0.3,60.6-100.3,60-155c-0.6-54.7,34.6-117.6-95-105
-        C156.2,73.7,157.6,188.4,155,235z"/>
-      <g id="arms-and-legs" fill="none" stroke="CadetBlue" stroke-width="20" stroke-linecap="round">
-        <path id="left-arm" d="M50,150c0.1,34.8,61.5,117,120,70"/>
-        <path id="right-arm" d="M330,185c30-25,90-93,130-35"/>
-        <path id="left-leg" d="M120,450c0,0,40,5.7,50,0s40-170,40-170"/>
-        <path id="right-leg" d="M260,310c0,0-7.3,121,0,125s40,0,40,0"/>
-      </g>  
-      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/><g id="eyes">
-        <path fill="#FFFFFF" d="M201.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C205.1,125.1,202.2,158.1,201.4,178.8z"/>
-        <circle fill="CadetBlue" cx="237" cy="155" r="15"/>
-        <path fill="#FFFFFF" d="M260.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C264.1,125.1,261.2,158.1,260.4,178.8z"/>
-        <circle fill="CadetBlue" cx="296" cy="155" r="15"/>
-      </g>  
-    </g>  
   </svg>
 
   <svg class="illustration-footer"
     width="2000px" height="500px" viewBox="0 0 2000 500">
     <path fill="#5F9EA0" d="M2000,150c-49,30.7-182.3,127-233.3,133.3c-98.3,12.7-162.3-75-266.7-16.7c-158.3,88.3-321-88.3-500-33.3 c-221,68-373.3,151.3-600,50c-183.3-82-244.3-93.7-400,16.7v200h2000V150z"/>
   </svg>
-
+  <script src="js/06.js"></script>
 </body>
 </html>
