@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>SVG</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <style type="text/css">
+    
+    html {
+        background-color: #eee;
+        color: #444;
+        overflow-y: scroll;
+        min-height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    body {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #444;
+    }
+
+    h1 {
+        font-family: 'Bungee';
+        font-size: 2.5rem;
+        color: #666;
+        line-height: 1;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content {
+        text-align: center;
+        width: 90%;
+        max-width: 40rem;
+    }
+
+    .next-page {
+        height: 10rem;
+        width: 10rem;
+        position: fixed;
+        right: 0;
+        top: 40vh;
+    }
+    
+    .illustration-header,
+    .illustration-footer {
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .illustration-header {
+        top: -10vh;
+    }
+
+    .illustration-footer {
+        bottom: 0;
+    }
+    
+    .cloud {
+        position: fixed;
+        z-index: 1;
+        height: 20%;
+    }
+    
+    .sun {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
+    #cloud-1 {
+        top: 16vh;
+        right: 24vw;    
+    }
+    
+    #cloud-2 {
+        top: 0vh;
+        right: 10vw;    
+    }
+    
+    #cloud-3 {
+        top: 20vh;
+        right: 1vw;    
+    }
+
+    /* This is Victor. Place him anywhere you want! */
+    .mascot {
+        position: fixed;
+        top: 30vh;
+        right: 70vw;
+        width: 10rem;
+        height: auto;
+        z-index: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Link this up to the next number -->
+  <a class="link" href="24.html">
+    <svg class="next-page">
+      <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
+    </svg>
+  </a>
+
+  <svg viewBox="0 0 2000 1200" height="1200" width="2000" class="illustration-header">
+    <path id="polygon2" fill="#aef" d="M1066.7 792.52l200 142.648 150-224.06L1550 894.465l166.7-142.65 116.6 244.473 166.7-224.06v-142.65H0v346.296L116.7 731.4l100 244.473L350 792.52l100 142.648 283.3-183.354 200 264.886z"/>
+    <path id="rect12" fill="#aef" stroke-width=".673" d="M0-21.352h2000v654.93H0z"/>
+  </svg>
+  
+  <svg class="sun" width="1200px" height="400px" viewBox="0 0 1200 400">
+    <g id="sun">
+        <line fill="none" stroke="yellow" stroke-width="8" x1="80" y1="30" x2="140" y2="50"/>
+        <line fill="none" stroke="yellow" stroke-width="8" x1="60" y1="70" x2="140" y2="130"/>
+        <line fill="none" stroke="yellow" stroke-width="8" x1="30" y1="90" x2="120" y2="440"/>
+        <circle fill="yellow" cx="0" cy="0" r="80"/>
+    </g>
+  </svg>  
+  
+
+  <div class="wrapper">
+    <div class="content">
+      <!--<h1>Workshop exercise:<br> Create a landscape</h1>
+      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
+      </p>-->
+    </div>
+  </div>
+
+  <svg id="cloud-1" class="cloud" viewBox="0 0 238.125 119.06251" height="450" width="900">
+  <g id="cloud" fill="#fff">
+    <path d="M117.93 261.47c-5.822 30.008-114.04 38.98-99.41-4.913 2.79-8.37 20.22 6.994 26.46.755 10.428-10.43 1.692-25.702 24.568-25.702 8.398 0 15.762 14.966 17.01 12.473 15.02-30.043 30.952 11.663 31.37 17.387z" id="path3734" stroke="#fff" stroke-width=".265" transform="matrix(1.82998 0 0 1.7734 -2.806 -401.66)"/>
+  </g>
+  </svg>
+  
+  <svg id="cloud-2" class="cloud" viewBox="0 0 238.125 119.06251" height="450" width="900">
+  <g id="cloud" fill="#fff">
+    <path d="M117.93 261.47c-5.822 30.008-114.04 38.98-99.41-4.913 2.79-8.37 20.22 6.994 26.46.755 10.428-10.43 1.692-25.702 24.568-25.702 8.398 0 15.762 14.966 17.01 12.473 15.02-30.043 30.952 11.663 31.37 17.387z" id="path3734" stroke="#fff" stroke-width=".265" transform="matrix(1.82998 0 0 1.7734 -2.806 -401.66)"/>
+  </g>
+  </svg>
+  
+  <svg id="cloud-3" class="cloud" viewBox="0 0 238.125 119.06251" height="450" width="900">
+  <g id="cloud" fill="#fff">
+    <path d="M117.93 261.47c-5.822 30.008-114.04 38.98-99.41-4.913 2.79-8.37 20.22 6.994 26.46.755 10.428-10.43 1.692-25.702 24.568-25.702 8.398 0 15.762 14.966 17.01 12.473 15.02-30.043 30.952 11.663 31.37 17.387z" id="path3734" stroke="#fff" stroke-width=".265" transform="matrix(1.82998 0 0 1.7734 -2.806 -401.66)"/>
+  </g>
+  </svg>
+
+  <svg class="mascot"
+     width="1000px" height="1000px" viewBox="0 0 1000 1000">
+    <g id="victor">
+        <path d="M406.458 732.88c-2.9 52.1 84.4 89.9 125 90 79 .3 60.6-100.3 60-155-.6-54.7 34.6-117.6-95-105-88.8 8.7-87.4 123.4-90 170z" id="body" fill="#5f9ea0"/>
+        <g id="arms-and-legs" fill="none" stroke="#5f9ea0" stroke-width="20" stroke-linecap="round">
+          <path d="M301.458 647.88c.1 34.8 61.5 117 120 70" id="left-arm"/>
+          <path d="M711.458 625.082c-30 25-90 93-130 35" id="right-arm"/>
+          <path d="M371.458 947.88s40 5.7 50 0 40-170 40-170" id="left-leg"/>
+          <path d="M511.458 807.88s-7.3 121 0 125 40 0 40 0" id="right-leg"/>
+        </g>
+        <path d="M511.458 777.88c25.6.1 37.7-45.8 35-50-2.7-4.2-28.6 7.3-40 10-10 2.3-29.1-4.1-35 0-5.9 4.1 22 39.9 40 40z" id="mouth" fill="#fff"/>
+        <g id="eyes" transform="translate(251.458 497.88)">
+          <path id="path9" d="M201.4 178.8c-.8 19.5 23.6 37.9 39.2 19.2 14.7-17.8 9.4-76.4-21-74-14.5 1.1-17.4 34.1-18.2 54.8z" fill="#fff"/>
+          <circle id="circle11" r="15" cy="155" cx="237" fill="#5f9ea0"/>
+          <path id="path13" d="M260.4 178.8c-.8 19.5 23.6 37.9 39.2 19.2 14.7-17.8 9.4-76.4-21-74-14.5 1.1-17.4 34.1-18.2 54.8z" fill="#fff"/>
+          <circle id="circle15" r="15" cy="155" cx="296" fill="#5f9ea0"/>
+        </g>
+    </g>
+    <g id="paraglider" stroke="#5f9ea0">
+        <path d="M59.322 345.407c81.637-324.8 656.986-381.338 849.576-127.12" id="path3701" fill="#5f9ea0"/>
+        <path d="M59.322 345.407L406.458 732.88" id="path3707" fill="none" stroke-width="2"/>
+        <path d="M908.898 218.288L593.22 697.034" id="path3709" fill="none" stroke-width="3"/>
+        <path d="M686.44 239.407L581.46 660.082" id="path3711" fill="none" stroke-width="3"/>
+        <path d="M468.22 269.068c42.373 300.847 42.373 302.966 42.373 302.966" id="path3713" fill="none" stroke-width="3"/>
+        <path d="M252.12 307.203l177.965 341.102" id="path3715" fill="none" stroke-width="3"/>
+    </g>
+  </svg>
+<!--
+  <svg class="illustration-footer"
+    width="2000px" height="500px" viewBox="0 0 2000 500">
+    <path fill="#5F9EA0" d="M2000,150c-49,30.7-182.3,127-233.3,133.3c-98.3,12.7-162.3-75-266.7-16.7c-158.3,88.3-321-88.3-500-33.3 c-221,68-373.3,151.3-600,50c-183.3-82-244.3-93.7-400,16.7v200h2000V150z"/>
+  </svg>
+-->
+</body>
+</html>
