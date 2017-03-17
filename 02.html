@@ -83,32 +83,130 @@
     }
 
   </style>
+
+  <script>
+    window.addEventListener("load", function () {
+
+        var min = -2500;
+        var max = 7000;
+        var cloud = document.querySelector("#cloud");
+        var rightLeg = document.querySelector("#right-leg");
+        var leftLeg = document.querySelector("#left-leg");
+
+        var x = min;
+
+        function onAnimationFrame() {
+            x += 10;
+            if(x  >= max) {
+                x = min;
+            }
+
+            cloud.setAttribute("transform", "translate(" + x + ",0)");
+
+            leftLeg.setAttribute("transform", "rotate(" +((x % 100)/10) + ")");
+
+            rightLeg.setAttribute("transform", "rotate(" +(-(x % 100)/10) + ")");
+
+            window.requestAnimationFrame(onAnimationFrame)
+        }
+        window.requestAnimationFrame(onAnimationFrame)
+    });
+
+  </script>
 </head>
 <body>
 
   <!-- Link this up to the next number -->
-  <a href="#">
+  <a href="03.html">
     <svg class="next-page">
       <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
     </svg>
   </a>
 
-  <svg class="illustration-header"
-    width="2000px" height="500px" viewBox="0 0 2000 500">
-    <polygon fill="#E04F55" points="0,283.3 116.7,83.3 216.7,283.3 350,133.3 450,250 733.3,100 933.3,316.7 1066.7,133.3 1266.7,250 1416.7,66.7 1550,216.7 1716.7,100 1833.3,300 2000,116.7 2000,0 0,0 "/>
-  </svg>
+  <svg  class="illustration-header"
+          xmlns:dc="http://purl.org/dc/elements/1.1/"
+          xmlns:cc="http://creativecommons.org/ns#"
+          xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns="http://www.w3.org/2000/svg"
+          enable-background="new"
+          version="1.1"
+          id="svg4899"
+          viewBox="0 0 7086.6142 3543.307">
+    <defs
+            id="defs4901">
+      <filter
+              height="1.1170095"
+              y="-0.058504739"
+              width="1.0301929"
+              x="-0.015096459"
+              id="filter5521"
+              style="color-interpolation-filters:sRGB">
+        <feGaussianBlur
+                id="feGaussianBlur5523"
+                stdDeviation="44.325871" />
+      </filter>
+    </defs>
+    <metadata
+            id="metadata4904">
+      <rdf:RDF>
+        <cc:Work
+                rdf:about="">
+          <dc:format>image/svg+xml</dc:format>
+          <dc:type
+                  rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+          <dc:title></dc:title>
+        </cc:Work>
+      </rdf:RDF>
+    </metadata>
+    <g
+            style="display:inline"
+            id="layer3">
+      <rect
+              y="-2802.4238"
+              x="-0.043968886"
+              height="2004.2306"
+              width="7111.5615"
+              id="rect5525"
+              style="display:inline;fill:#4a83e7;fill-opacity:1;fill-rule:evenodd;stroke:#6f5c28;stroke-width:0.91203332;stroke-opacity:1"
+              transform="translate(0,2490.9449)" />
+      <g
+              id="cloud" transform="translate(-500, 0)">
+        <path
+                style="opacity:0.93999999;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#6f5c28;stroke-width:0.46070051;stroke-opacity:1"
+                d="m 1621.0272,-174.04321 a 331.33005,234.35539 0 0 0 -33.0605,1.4043 331.33005,234.35539 0 0 0 -261.9258,131.376954 351.53308,202.0305 0 0 0 -188.7988,-18.43554 351.53308,202.0305 0 0 0 -312.01374,215.607416 351.53308,202.0305 0 0 0 39.17383,78.5 291.19357,254.82808 0 0 0 -40.38672,128.9375 291.19357,254.82808 0 0 0 291.19343,254.82812 291.19357,254.82808 0 0 0 102.1894,-16.35156 266.68027,351.53308 0 0 0 263.1563,242.11914 266.68027,351.53308 0 0 0 235.5527,-213.57227 569.72601,323.24881 0 0 0 90.5058,-19.44531 218.19295,193.9493 0 0 0 205.5254,111.90625 218.19295,193.9493 0 0 0 210.1973,-193.82031 l -0.037,-0.44531 A 331.33005,250.51784 0 0 0 2343.5547,335.06226 L 2340,298.46656 a 331.33005,250.51784 0 0 0 -364.1348,-212.408202 331.33005,250.51784 0 0 0 -14.6484,1.591797 569.72601,323.24881 0 0 0 -7.2579,-3.759765 331.33005,234.35539 0 0 0 1.6973,-23.589844 l -3.5548,-34.234372 A 331.33005,234.35539 0 0 0 1621.0272,-174.04321 Z"
+                id="path5555" />
+      </g>
+    </g>
+    <g
+            style="display:inline"
+            transform="translate(0,2490.9449)"
+            id="layer1">
+      <path
+              id="path4907"
+              d="m 12.428571,-2369.9812 c 0,0 1618.722329,1533.99361 2329.428629,1221.8296 1045.8674,-516.2084 1261.8704,-1208.2503 1400.9999,-1239.4863 191.7597,-43.052 908.5715,594.2857 908.5715,594.2857 l 1245.7143,862.8572 c 0,0 359.045,-315.5562 582.8571,-365.7143 187.1993,-41.9529 571.4286,68.5714 571.4286,68.5714 l 48.4873,16.1624 3.3474,1109.5519 L 2707.2491,-287.26054 5.7142857,-147.63789 Z"
+              style="fill:#a3a3a3;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+              id="horizon"
+              d="m 2779.9398,-313.3641 4283.0468,210.1117 0,339.4113 -3022.3764,210.1117 z"
+              style="fill:#f0ecb9;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+              id="path5453"
+              d="m 0,-151.7397 2788.021,-145.46194 c 0,0 365.7968,116.23725 591.6591,239.489872 158.7462,86.627494 660.93,495.901108 660.93,495.901108 L 1852.0135,770.93487 24.243661,1060.4434 Z"
+              style="fill:#50e7ef;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+              id="path5455"
+              d="m 2796.1022,-297.2017 4242.6407,185.8681 16.1625,371.7361 -3022.3764,193.9493 z"
+              style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+              id="path5449"
+              d="M -2.9995645e-7,1076.6058 C 204.03556,892.18904 2848.5899,605.54282 3677.3824,467.04301 5429.3231,174.27557 7079.149,260.40252 7079.149,260.40252 l 8.0812,800.04078 z"
+              style="fill:#9ee7c6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
 
-  <div class="wrapper">
-    <div class="content">
-      <h1>Workshop exercise:<br> Create a landscape</h1>
-      <p>Your task is to play around with drawing and writing SVG. Use this HTML&CSS as a starter kit. Delete the <code>&lt;polygon&gt;</code> and <code>&lt;path&gt;</code> to add your own mountains, oceans, or perhaps a city skyline? Go for any theme you feel like, or pick from the suggestions.  Write something here to complement the scenery — or just delete the text. But don’t forget to take Victor Vector on an adventure with you!
-      </p>
-    </div>
-  </div>
+    </g>
 
-  <svg class="mascot"
-     width="500px" height="500px" viewBox="0 0 500 500">
-    <g id="victor">
+
+    <g id="victor" transform="translate(0,2290.9449)">
       <path id="body" fill="CadetBlue" d="M155,235c-2.9,52.1,84.4,89.9,125,90c79,0.3,60.6-100.3,60-155c-0.6-54.7,34.6-117.6-95-105
         C156.2,73.7,157.6,188.4,155,235z"/>
       <g id="arms-and-legs" fill="none" stroke="CadetBlue" stroke-width="20" stroke-linecap="round">
@@ -116,20 +214,32 @@
         <path id="right-arm" d="M330,185c30-25,90-93,130-35"/>
         <path id="left-leg" d="M120,450c0,0,40,5.7,50,0s40-170,40-170"/>
         <path id="right-leg" d="M260,310c0,0-7.3,121,0,125s40,0,40,0"/>
-      </g>  
-      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/><g id="eyes">
+      </g>
+      <path id="mouth" fill="#FFFFFF" d="M260,280c25.6,0.1,37.7-45.8,35-50s-28.6,7.3-40,10c-10,2.3-29.1-4.1-35,0S242,279.9,260,280z"/>
+      <g id="eyes">
         <path fill="#FFFFFF" d="M201.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C205.1,125.1,202.2,158.1,201.4,178.8z"/>
         <circle fill="CadetBlue" cx="237" cy="155" r="15"/>
         <path fill="#FFFFFF" d="M260.4,178.8c-0.8,19.5,23.6,37.9,39.2,19.2c14.7-17.8,9.4-76.4-21-74C264.1,125.1,261.2,158.1,260.4,178.8z"/>
         <circle fill="CadetBlue" cx="296" cy="155" r="15"/>
-      </g>  
-    </g>  
+      </g>
+      <animateMotion dur="20s" repeatCount="indefinite">
+        <mpath xlink:href="#path5729"/>
+      </animateMotion>
+    </g>
+
+
+
+    <path
+            style="fill:none;fill-rule:evenodd;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+            d="M 16.162441,-2325.588 C 2036.4675,-1113.4049 2068.7924,-1089.1613 2068.7924,-1089.1613 l 1688.9751,-1292.9952 2076.8736,1398.0511 703.0662,-331.33 549.5229,113.1371"
+            id="path5729" transform="translate(0,2490.9449)"/>
+
+
   </svg>
 
-  <svg class="illustration-footer"
-    width="2000px" height="500px" viewBox="0 0 2000 500">
-    <path fill="#5F9EA0" d="M2000,150c-49,30.7-182.3,127-233.3,133.3c-98.3,12.7-162.3-75-266.7-16.7c-158.3,88.3-321-88.3-500-33.3 c-221,68-373.3,151.3-600,50c-183.3-82-244.3-93.7-400,16.7v200h2000V150z"/>
-  </svg>
+
+
+
 
 </body>
 </html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>SVG</title>
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+  <style type="text/css">
+
+    html {
+        color: #444;
+        overflow-y: scroll;
+        min-height: 100%;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    body {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: #444;
+    }
+
+    h1 {
+        font-family: 'Bungee';
+        font-size: 2.5rem;
+        color: #666;
+        line-height: 1;
+    }
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .content {
+        text-align: center;
+        width: 90%;
+        max-width: 40rem;
+    }
+
+    .next-page {
+        height: 10rem;
+        width: 10rem;
+        position: fixed;
+        right: 0;
+        top: 40vh;
+    }
+
+    .illustration-header,
+    .illustration-footer {
+        width: 100vw;
+        height: auto;
+        overflow-x: hidden;
+        position: fixed;
+        z-index: -1;
+    }
+
+    .illustration-header {
+        top: 0;
+    }
+
+    .illustration-footer {
+        bottom: 0;
+    }
+
+    /* This is Victor. Place him anywhere you want! */
+    .mascot {
+        position: fixed;
+        top: 50vh;
+        right: 12vw;
+        width: 10rem;
+        height: auto;
+        z-index: 1;
+    }
+
+
+
+    /* The animation code */
+@keyframes leg {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(4deg);}
+}
+
+@keyframes float {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  to {
+    transform: rotate(3deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+
+
+/* The element to apply the animation to */
+#left-leg {
+    animation-name: leg;
+    animation-duration: 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#right-leg {
+    animation-name: leg;
+    animation-duration: 0.4s;
+    animation-direction:alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+#victor {
+  animation-name: floatt;
+  animation-duration: 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+
+}
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Link this up to the next number -->
+  <a href="06.html">
+    <svg class="next-page">
+      <polygon fill="#666" fill-opacity="0.2" points="10,0 150,80 10,160 "/>
+    </svg>
+  </a>
+
+
+  <svg width="100%" height="100%" viewBox="0 0 3166 2336" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" transform(scale="0.4")>
+      <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+      <title>Artboard</title>
+      <desc>Created with Sketch.</desc>
+      <defs>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+              <stop stop-color="#4990E2" offset="0%"></stop>
+              <stop stop-color="#376EAE" offset="100%"></stop>
+          </linearGradient>
+          <polygon id="path-2" points="0.0234375 0.0234375 3166.40625 0.0234375 3166.40625 946.085938 0.0234375 975.085938"></polygon>
+          <linearGradient x1="50%" y1="2.6426977%" x2="50%" y2="97.9292889%" id="linearGradient-4">
+              <stop stop-color="#D8D8D8" offset="0%"></stop>
+              <stop stop-color="#BDBDBD" offset="100%"></stop>
+          </linearGradient>
+          <path d="M51.8353437,118.973859 L608.270425,100.973859 C635.870226,100.081039 657.520511,76.9832067 656.627691,49.3834063 C655.734871,21.7836058 632.637038,0.133320517 605.037238,1.02614059 L48.6021563,19.0261406 C21.0023558,19.9189607 -0.647929483,43.0167933 0.244890586,70.6165937 C1.13771066,98.2163942 24.2355433,119.866679 51.8353437,118.973859 Z" id="path-5"></path>
+      </defs>
+      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="Artboard">
+              <polygon id="water" stroke="#979797" fill="url(#linearGradient-1)" points="0.0234375 972.933793 3166.40625 946 3166.40625 2334.48438 0.0234375 2334.48438"></polygon>
+              <g id="Oval-4">
+                  <mask id="mask-3" fill="white">
+                      <use xlink:href="#path-2"></use>
+                  </mask>
+                  <use id="Mask" fill-opacity="0.239999995" fill="#4990E2" xlink:href="#path-2"></use>
+                  <circle fill="#FAFAFA" mask="url(#mask-3)" cx="268.03125" cy="1073.1875" r="397"></circle>
+                  <circle id="Oval-4-Copy" fill="#FAFAFA" mask="url(#mask-3)" cx="779.375" cy="855.359375" r="397"></circle>
+                  <circle id="Oval-4-Copy-2" fill="#FAFAFA" mask="url(#mask-3)" cx="1450.28125" cy="1094.90625" r="397"></circle>
+                  <circle id="Oval-4-Copy-3" fill="#FAFAFA" mask="url(#mask-3)" cx="1993.39062" cy="963.3125" r="397"></circle>
+                  <circle id="Oval-4-Copy-4" fill="#FAFAFA" mask="url(#mask-3)" cx="2460.26562" cy="938.65625" r="397"></circle>
+                  <circle id="Oval-4-Copy-5" fill="#FAFAFA" mask="url(#mask-3)" cx="2960.17188" cy="1160.42188" r="397"></circle>
+                  <circle id="Oval-4-Copy-6" fill="#FAFAFA" mask="url(#mask-3)" cx="3270.3125" cy="1058.48438" r="397"></circle>
+              </g>
+              <g id="shark" transform="translate(1771.000000, 1551.000000)">
+                  <polygon id="fin" fill="#9C9C9C" points="30.2265625 674 307.226562 594 307.226562 784.046875 0.2265625 784.046875"></polygon>
+                  <g id="eye" transform="translate(630.000000, 184.000000)">
+                      <circle id="Combined-Shape" fill="#000000" cx="47.2265625" cy="47.0859375" r="46.5"></circle>
+                      <circle id="Oval-3" fill="#FFFFFF" cx="57.71875" cy="22" r="14"></circle>
+                  </g>
+                  <g id="eye" transform="translate(260.000000, 184.000000)">
+                      <circle id="Combined-Shape-Copy" fill="#000000" cx="47.2265625" cy="47.0859375" r="46.5"></circle>
+                      <circle id="Oval-3" fill="#FFFFFF" cx="37.71875" cy="22" r="14"></circle>
+                  </g>
+                  <polygon id="body" fill="url(#linearGradient-4)" points="308.679688 90.5859375 492.0625 0.5859375 675.679688 90.5859375 735.679688 784.585938 248.679688 784.585938"></polygon>
+                  <polygon id="mouth" fill="#000000" points="353.71875 256.269531 494.402344 196.269531 630.71875 256.269531 610.71875 354.269531 493.253906 324.269531 373.71875 354.269531"></polygon>
+                  <g id="teeth" transform="translate(378.000000, 261.000000)" fill="#FFFFFF">
+                      <polyline id="Triangle" points="0.298491456 22.1795017 31.5442341 87.5626308 3.40565801 94.5783658"></polyline>
+                      <polyline id="Triangle-Copy" points="36.3332952 13.5620639 61.7616232 81.4196363 33.1186613 85.9562358"></polyline>
+                      <polyline id="Triangle-Copy-2" points="74.7926899 6.26008822 95.4255707 75.7261535 66.5359245 78.2536701"></polyline>
+                      <polyline id="Triangle-Copy-6" points="154.980748 7.26008822 163.237513 79.2536701 134.347867 76.7261535"></polyline>
+                      <polyline id="Triangle-Copy-5" points="192.440142 14.5620639 195.654776 86.9562358 167.011814 82.4196363"></polyline>
+                      <polyline id="Triangle-Copy-4" points="232.474946 24.1795017 229.367779 96.5783658 201.229203 89.5626308"></polyline>
+                      <polygon id="Triangle-Copy-3" points="113.886719 0.125 128.386719 71.125 99.3867188 71.125"></polygon>
+                  </g>
+              </g>
+              <g id="victor" transform="translate(1906.328125, 690.984375)">
+                  <g transform="translate(132.000000, 0.000000)">
+                      <path d="M105.71875,172 C102.81875,224.1 190.11875,261.9 230.71875,262 C309.71875,262.3 291.31875,161.7 290.71875,107 C290.11875,52.3 325.31875,-10.6 195.71875,2 C106.91875,10.7 108.31875,125.4 105.71875,172 Z" id="body" fill="#000000" fill-rule="nonzero"></path>
+                      <g id="arms-and-legs" transform="translate(0.000000, 64.000000)" stroke="#000000" stroke-width="20" stroke-linecap="round">
+                          <path d="M0.71875,23 C0.81875,57.8 62.21875,140 120.71875,93" id="left-arm"></path>
+                          <path d="M280.71875,58 C310.71875,33 370.71875,-35 410.71875,23" id="right-arm"></path>
+                          <path d="M70.71875,323 C70.71875,323 110.71875,328.7 120.71875,323 C130.71875,317.3 160.71875,153 160.71875,153" id="left-leg" opacity="0.283910779"></path>
+                          <path d="M210.71875,183 C210.71875,183 203.41875,304 210.71875,308 C218.01875,312 250.71875,308 250.71875,308" id="right-leg" opacity="0.283910779"></path>
+                      </g>
+                      <path d="M210.71875,217 C236.31875,217.1 248.41875,171.2 245.71875,167 C243.01875,162.8 217.11875,174.3 205.71875,177 C195.71875,179.3 176.61875,172.9 170.71875,177 C164.81875,181.1 192.71875,216.9 210.71875,217 Z" id="mouth" fill="#FFFFFF" fill-rule="nonzero"></path>
+                      <g id="eyes" transform="translate(152.000000, 60.000000)" fill-rule="nonzero">
+                          <path d="M0.11875,55.8 C-0.68125,75.3 23.71875,93.7 39.31875,75 C54.01875,57.2 48.71875,-1.4 18.31875,1 C3.81875,2.1 0.91875,35.1 0.11875,55.8 Z" id="Shape" fill="#FFFFFF"></path>
+                          <circle id="Oval" fill="#000000" cx="35.71875" cy="32" r="15"></circle>
+                          <path d="M59.11875,55.8 C58.31875,75.3 82.71875,93.7 98.31875,75 C113.01875,57.2 107.71875,-1.4 77.31875,1 C62.81875,2.1 59.91875,35.1 59.11875,55.8 Z" id="Shape" fill="#FFFFFF"></path>
+                          <circle id="Oval" fill="#000000" cx="94.71875" cy="32" r="15"></circle>
+                      </g>
+                  </g>
+                  <g id="buoy" transform="translate(0.671875, 197.015625)">
+                      <mask id="mask-6" fill="white">
+                          <use xlink:href="#path-5"></use>
+                      </mask>
+                      <use id="Mask" fill="#FFFFFF" fill-rule="nonzero" xlink:href="#path-5"></use>
+                      <rect id="Rectangle-5" fill="#D0011B" mask="url(#mask-6)" x="68.71875" y="-11" width="52" height="196"></rect>
+                      <rect id="Rectangle-5-Copy" fill="#D0011B" mask="url(#mask-6)" x="178.71875" y="-11" width="52" height="196"></rect>
+                      <rect id="Rectangle-5-Copy-2" fill="#D0011B" mask="url(#mask-6)" x="298.71875" y="-11" width="52" height="196"></rect>
+                      <rect id="Rectangle-5-Copy-3" fill="#D0011B" mask="url(#mask-6)" x="428.71875" y="-11" width="52" height="196"></rect>
+                      <rect id="Rectangle-5-Copy-4" fill="#D0011B" mask="url(#mask-6)" x="538.71875" y="-11" width="52" height="196"></rect>
+                  </g>
+              </g>
+              <path d="M3158.72722,938.5 L19.4900994,978.5" id="water" stroke="#6EB2FF" stroke-width="23" stroke-linecap="square"></path>
+              <path d="M164.455669,315 C175.749343,226.450186 251.380973,158 343,158 C393.839255,158 439.755794,179.076653 472.488439,212.96878 C490.029362,204.864943 509.564815,200.34375 530.15625,200.34375 C598.344828,200.34375 654.953467,249.923361 665.899585,315 L164.455669,315 Z" id="cloud" fill="#FFFFFF"></path>
+          </g>
+      </g>
+  </svg>
+<script type="text/javascript">
+
+</script>
+
+</body>
+</html>

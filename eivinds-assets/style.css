@@ -1,0 +1,181 @@
+@keyframes colorBlink-1 {
+  0% {
+    fill: red; }
+  50% {
+    fill: green; }
+  100% {
+    fill: red; } }
+
+@keyframes colorBlink-2 {
+  0% {
+    fill: green; }
+  50% {
+    fill: red; }
+  100% {
+    fill: green; } }
+
+@keyframes colorBlink-3 {
+  0% {
+    fill: yellow; }
+  50% {
+    fill: blue; }
+  100% {
+    fill: yellow; } }
+
+@keyframes colorBlink-4 {
+  0% {
+    fill: blue; }
+  50% {
+    fill: yellow; }
+  100% {
+    fill: blue; } }
+
+@keyframes colorBlink-5 {
+  0% {
+    fill: orange; }
+  50% {
+    fill: teal; }
+  100% {
+    fill: orange; } }
+
+@keyframes colorBlink-6 {
+  0% {
+    fill: teal; }
+  50% {
+    fill: orange; }
+  100% {
+    fill: teal; } }
+
+@keyframes colorBlink-7 {
+  0% {
+    fill: aqua; }
+  50% {
+    fill: pink; }
+  100% {
+    fill: aqua; } }
+
+@keyframes colorBlink-8 {
+  0% {
+    fill: pink; }
+  50% {
+    fill: aqua; }
+  100% {
+    fill: pink; } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(90deg); }
+  50% {
+    transform: rotate(180deg); }
+  75% {
+    transform: rotate(270deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes topDown {
+  0% {
+    bottom: 500px; }
+  100% {
+    bottom: 0; } }
+
+@keyframes upDown {
+  0% {
+    top: 50vh; }
+  50% {
+    top: 48vh; }
+  100% {
+    top: 50vh; } }
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg); }
+  25% {
+    transform: rotate(5deg); }
+  50% {
+    transform: rotate(0); }
+  75% {
+    transform: rotate(-5deg); }
+  100% {
+    transform: rotate(0deg); } }
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%; }
+
+.fixed-heading {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: hotpink;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 60px;
+  position: relative;
+  animation-duration: 1.5s;
+  animation-name: topDown;
+  animation: topDown 1.5s, move 1s 2s infinite; }
+
+.body-bg {
+  position: absolute;
+  transform-origin: center;
+  height: 500px;
+  width: 500px;
+  background-image: linear-gradient(to bottom, #40FFF3, #D8A5FF);
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: rotate;
+  border-radius: 50%; }
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 75vh; }
+
+.mascot {
+  position: relative;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-name: upDown; }
+
+.optimus {
+  filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.5));
+  transform: scale(0.5); }
+  .optimus #left-eye,
+  .optimus #forehead,
+  .optimus #right-eye,
+  .optimus #left-cheek,
+  .optimus #nose,
+  .optimus #mouth,
+  .optimus #jaw,
+  .optimus #right-cheek {
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite; }
+  .optimus #left-eye {
+    animation-name: colorBlink-1;
+    animation-delay: 0ms; }
+  .optimus #forehead {
+    animation-name: colorBlink-2;
+    animation-delay: 100ms; }
+  .optimus #right-eye {
+    animation-name: colorBlink-3;
+    animation-delay: 200ms; }
+  .optimus #left-cheek {
+    animation-name: colorBlink-4;
+    animation-delay: 300ms; }
+  .optimus #nose {
+    animation-name: colorBlink-5;
+    animation-delay: 400ms; }
+  .optimus #mouth {
+    animation-name: colorBlink-6;
+    animation-delay: 500ms; }
+  .optimus #jaw {
+    animation-name: colorBlink-7;
+    animation-delay: 600ms; }
+  .optimus #right-cheek {
+    animation-name: colorBlink-8;
+    animation-delay: 700ms; }
