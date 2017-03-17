@@ -176,6 +176,7 @@
       var trees = d3.select('#Forest').selectAll('path');
 
       shiverTrees();
+      setInterval(function() { shiverTrees(); }, 3000);
 
       function shiverTrees() {
       trees
@@ -224,8 +225,9 @@
       }
 
       surf();
-      
+      setInterval(function() { surf(); }, 3000);
 
+      function moveClouds() {
       d3.select('#Clouds').selectAll('path')
       .attr('opacity', function(d, i) { if(i % 2 === 0) { return 1; } else { return 0.8; }})
       .attr('fill', function(d, i) { if(i % 2 === 0) { return '#fff'; } else { return 'f6f6f6'; }})
@@ -252,6 +254,11 @@
             .transition(t)
       .attr('transform', 'translate(' + getRandom() +', 0)');
       });
+
+      }
+
+      moveClouds();
+      setInterval(function() { moveClouds(); }, 3000);
       
     </script>
 </body>
