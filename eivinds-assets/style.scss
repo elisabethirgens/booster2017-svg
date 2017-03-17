@@ -23,6 +23,26 @@
   100% { transform: rotate(360deg); }
 }
 
+@keyframes topDown {
+  0% { bottom: 500px; }
+  100% { bottom: 0; }
+}
+
+@keyframes upDown {
+  0% { top: 50vh; }
+  50% { top: 48vh; }
+  100% { top: 50vh; }
+}
+
+@keyframes move {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(0);}
+  75% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
 body {
   position: relative;
   height: 100%;
@@ -30,9 +50,20 @@ body {
 }
 
 .fixed-heading {
+  margin-top: 50px;
+  margin-bottom: 25px;
   display: block;
   width: 100%;
   text-align: center;
+  color: hotpink;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 60px;
+  position: relative;
+
+  animation-duration: 1.5s;
+  animation-name: topDown;
+
+  animation: topDown 1.5s, move 1s 2s infinite;
 }
 
 .body-bg {
@@ -52,6 +83,13 @@ body {
   align-items: center;
   justify-content: center;
   max-height: 75vh;
+}
+
+.mascot {
+  position: relative;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-name: upDown;
 }
 
 .optimus {
