@@ -4,11 +4,11 @@
 
 Scalable Vector Graphics (SVG) can be drawn up in graphics software or hand coded in an editor. In this workshop, we are going to do both! \o/ If your happy place is usually filled with code — and drawing sounds scary — this workshop is especially for you.
 
-![Scribbled line with a ghost.](https://cdn.rawgit.com/bring/booster2017-svg/master/scary.svg)
+![Scribbled line with a ghost.](scary.svg)
 
 “But I can’t draw,” you say…? Sure you can! Because basic shapes and simple lines will do just fine. There is so much we can make without any classic drawing skills, and this is what we want to show you.
 
-![Colourful circles.](https://cdn.rawgit.com/bring/booster2017-svg/master/circles.svg)
+![Colourful circles.](circles.svg)
 
 ## Today
 
@@ -42,7 +42,7 @@ Your task is to play around with drawing and writing SVG. Have fun! Use this [HT
 
 There is only one rule: Victor Vector. Make him small or large, change his appearance, give him props or animate his arms. But you have to add him somewhere in your landscape.
 
-![Victor Vector](https://cdn.rawgit.com/bring/booster2017-svg/1beca2f6/victor.svg)
+![Victor Vector](victor.svg)
 
 ### Spark list with ideas for your landscape theme
 
@@ -67,5 +67,4 @@ Bergen / Oslo / New Delhi / Paris / London / Golden Gate bridge / pyramids in Eg
 * [A Complete Guide to SVG Fallbacks](https://css-tricks.com/a-complete-guide-to-svg-fallbacks/) by Amelia Bellamy-Royds.
 * [SVG element reference](https://developer.mozilla.org/en-US/docs/Web/SVG/Element) on MDN.
 
-![Browser with dummy design.](https://cdn.rawgit.com/bring/booster2017-svg/master/browser.svg)
-
+![Browser with dummy design.](browser.svg)
